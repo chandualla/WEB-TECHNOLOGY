@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Restaurant Bill Generator</title>
+	<link rel="StyleSheet" href="bill.css">
+</head>
+<body class="b">
+	<div class="container">
+		<h1 align="center" style="font-style: oblique; color: blue; font-size: xx-large;">Restaurant Bill Generator</h1>
+		<form id="order" align="left">
+            <table class="ta">
+			<tr><td><label for="appetizers">Starters:</label></td>
+			<td><select class="s" id="appetizers" name="appetizers">
+				<option value="0">None</option>
+				<option value="50">Chicken Magistic</option>
+				<option value="70">Chilli Chicken</option>
+				<option value="80">Paneer Chilli</option>
+			</select>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td><label for="quantity">Quantity:</label>
+            <td><input type="number" id="q1" name="q1" min="0"></td>
+            </td></td>
+            </tr>
+			<tr><td><label for="entrees">Biryanis:</label></td>
+			<td><select  class="s" id="entrees" name="entrees">
+				<option value="0">None</option>
+				<option value="90">Chicken Dum Biryani</option>
+				<option value="80">Donne Biryani</option>
+				<option value="70">Konaseema Kodi Pulao</option>
+			</select>
+            <td><label for="quantity">Quantity:</label>
+                <td><input type="number" id="q2" name="q2"></td>
+                </td></td>
+            </tr>
+			<tr><td><label for="drinks">Drinks:</label></td>
+			<td><select class="s" id="drinks" name="drinks">
+				<option value="0">None</option>
+				<option value="60">Soda</option>
+				<option value="50">Coco-cola</option>
+				<option value="40">Limca</option>
+			</select>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td><label for="quantity">Quantity:</label>
+                <td><input type="number" id="q3" name="q3"></td>
+                </td></td>
+            </tr>
+			<tr><td><label for="desserts">Desserts:</label></td>
+			<td><select class="s" id="desserts" name="desserts">
+				<option value="0">None</option>
+				<option value="50">Chocolate cake</option>
+				<option value="20">Rasmalai</option>
+				<option value="30">Gulab Jamun</option>
+			</select>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <td><label for="quantity">Quantity:</label>
+                <td><input type="number" id="q4" name="q4"></td>
+                </td></td>
+            </tr></table>
+			<button type="submit" id="submit-btn">Calculate Total Cost</button>
+		</form>
+        
+		
+	</div>
+	<div class="container2" align="center">
+		<h1>Your order Summary</h1>
+		<table id="t1">
+			<tr><span id="apval" style="font-size: x-large;"></span></tr><br>
+			<tr><span id="entval" style="font-size: x-large;"></span></tr><br>
+			<tr><span id="drval" style="font-size: x-large;"></span></tr><br>
+			<tr><span id="desval" style="font-size: x-large;"></span></tr>
+		</table>
+	</div>
+	<div id="tr" style="background-color: blueviolet;">
+		<h1 style="color: rgb(218, 119, 13);">The Total Amount to be paid is: <span id="total"></span></h1>
+	</div>
+	
+   <script src="sc.js"></script>
+	
+</body>
+</html>

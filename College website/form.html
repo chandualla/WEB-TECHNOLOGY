@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <form name="f1" action="right.html" onsubmit="func()" style="margin-left: 500px; margin-right: 500px;" >
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="nm" placeholder="Enter the name" maxlength="20" required="required"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="cid" placeholder="Enter the mailid"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="pwd"></td>
+            </tr>
+            <tr>
+                <td>DOB</td>
+                <td><input type="date" name="dob"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" name="gen">M 
+                <input type="radio" name="gen">F</td>
+            </tr>
+            <tr>
+                <td>Religion</td>
+                <td>
+                    <select name="db" id="">
+                        <option value="h">Hindu</option>
+                        <option value="m">Muslim</option>
+                        <option value="c">Christian</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Languages</td>
+                <td>
+                    <input type="checkbox">Telugu
+                    <input type="checkbox">English
+                    <input type="checkbox">Hindi
+                </td>
+            </tr>
+            <tr>
+                <td>address</td>
+                <td><textarea name="" id="" cols="10" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="submit">
+                </td>
+                <td>
+                    <input type="reset" name="reset  ">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function func()
+        {
+            alert("Your form was submitted successfully");
+        }
+    </script>
+</body>
+</html>

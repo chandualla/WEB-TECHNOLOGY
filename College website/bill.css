@@ -1,0 +1,75 @@
+.b {
+	margin:80px;
+	padding: 20px;
+    background-image: url('133.jpg');
+    background-repeat: no-repeat;
+    background-size:125rem;
+    margin-left: -200px;
+    margin-right: -200px;
+}
+
+
+label {
+	display: block;
+	margin-right: 100px;
+    color: rgb(9, 5, 40);
+    font-size: x-large;
+}
+.ta{
+    margin-left:380px;
+    text-align: center;
+}
+.s{
+    margin-bottom: 20px;
+    padding:10px;
+    background-color:rgb(218, 218, 46);
+    border-color:rgb(83, 121, 209);
+    border-width: 3px;
+}
+.s:hover {
+    background-color:cadetblue;
+}
+button {
+	margin-top: 20px;
+}
+#total-container {
+	text-align: center;
+	margin-top: 20px;
+}
+#submit-btn{
+    margin-left:580px;
+    text-align: center;
+    font-size: x-large;
+    color:darkgreen;
+}
+#tr{
+    color: white;
+    text-align: center;
+    text-shadow: 10px;
+    font-size:xx-large;
+}
+#total {
+	font-weight: bold;
+    color: coral;
+}
+#q1,#q2,#q3,#q4{
+    background-color: rgb(201, 208, 59);
+    border-color: rgb(49, 132, 186);
+    border-width: 3px;
+    padding: 10px;
+}
+#t1{
+    margin-left: 5000px;
+    margin-right: 5000px;
+}
+.container2{
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+    margin-left: 600px;
+    margin-right: 600px;
+    background-color: rgb(216, 226, 235);
+  }
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <h3>Contents</h3>
+    <ol>
+        <li><a href="list.html" target="right">Lists</a></li>
+        <li><a href="table1.html" target="right">Tables</a></li>
+        <li><a href="form.html" target="right">Form</a></li>
+        <li><a href="image.html" target="right">Images</a></li>
+        <li>
+            <select name="jc" id="jcp">
+                <option value="k">JS Applications</option>
+                <option value="g"><a href="bill.html" target="right">game</a></option>
+                <option value="b"><a href="bill.html" target="right"> bill generator</a></option>
+            </select>
+        </li>
+    </ol>
+    <script>
+        const sel=document.getElementById('jcp');
+        sel.addEventListener("change",function()
+        {
+            if(sel.value=="g"){
+                const gurl="g3.html";
+                parent.right.location.href=gurl;
+            }
+            else if(sel.value=="b"){
+                const burl="bill.html";
+                parent.right.location.href=burl;
+            }
+        });
+    </script>
+</body>
+</html>
